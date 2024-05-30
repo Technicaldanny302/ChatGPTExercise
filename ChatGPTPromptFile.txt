@@ -1,0 +1,23 @@
+Prompts:
+what is a class in JavaScript
+In JavaScript, a class is a blueprint for creating objects with similar properties and methods. It allows you to define a template for creating objects with shared characteristics. Classes were introduced in ECMAScript 2015 (ES6) and provide syntactic sugar over JavaScript's existing prototype-based inheritance.
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+  }
+}
+
+// Creating an instance of the Person class
+const john = new Person("John", 30);
+console.log(john.greet()); // Output: Hello, my name is John and I am 30 years old.
+In this example:
+
+Person is the class name.
+constructor is a special method for initializing new objects created with this class.
+greet is a method defined within the class.
+new Person("John", 30) creates a new instance of the Person class with the name "John" and age 30.
